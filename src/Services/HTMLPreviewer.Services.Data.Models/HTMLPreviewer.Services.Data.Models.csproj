@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlSanitizer" Version="6.0.453" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\HTMLPreveiwer.Data.Models\HTMLPreviewer.Data.Models.csproj" />
+    <ProjectReference Include="..\HTMLPreviewer.Services.Mapping\HTMLPreviewer.Services.Mapping.csproj" />
+  </ItemGroup>
+
+</Project>

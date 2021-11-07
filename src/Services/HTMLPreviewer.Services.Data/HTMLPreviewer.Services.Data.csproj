@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\HTMLPreviewer.Data\HTMLPreviewer.Data.csproj" />
+    <ProjectReference Include="..\HTMLPreviewer.Services.Data.Models\HTMLPreviewer.Services.Data.Models.csproj" />
+  </ItemGroup>
+
+</Project>

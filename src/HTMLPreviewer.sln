@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{7E6D2046-5690-4F39-98CA-48FB747A1223}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{29F6036C-3639-4E46-AAD2-9039944C8A2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{7AEFD0D0-BFBA-418C-832A-485CC4B7F3C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A2C5FE54-F0DF-4C92-9B39-9CE911519B93}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTMLPreviewer.Data.Models", "Data\HTMLPreveiwer.Data.Models\HTMLPreviewer.Data.Models.csproj", "{33099406-072F-4389-9614-463FC482F3CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTMLPreviewer.Data", "Data\HTMLPreviewer.Data\HTMLPreviewer.Data.csproj", "{17CA8A65-5E43-4A26-ADD8-2BEE8A6018C0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTMLPreviewer.Data.Common", "Data\HTMLPreviewer.Data.Common\HTMLPreviewer.Data.Common.csproj", "{0E5A5FB6-2A97-4782-84AE-47B33343F5EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTMLPreviewer.Services.Data", "Services\HTMLPreviewer.Services.Data\HTMLPreviewer.Services.Data.csproj", "{8FF01158-E837-4EDD-98E2-4FFFA94C349F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTMLPreviewer.Services.Data.Models", "Services\HTMLPreviewer.Services.Data.Models\HTMLPreviewer.Services.Data.Models.csproj", "{7623A079-E036-4359-B554-3F8873069F6D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTMLPreviewer.Services.Mapping", "Services\HTMLPreviewer.Services.Mapping\HTMLPreviewer.Services.Mapping.csproj", "{98F96E66-442F-4857-8D8A-B35B6E59EF3F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTMLPreviewer.Services.Data.Tests", "Tests\HTMLPreviewer.Services.Data.Tests\HTMLPreviewer.Services.Data.Tests.csproj", "{1A0014A9-B924-40E0-B94A-D2DDBFBBE1B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTMLPreviewer.Web", "Web\HTMLPreviewer.Web\HTMLPreviewer.Web.csproj", "{C6F812E7-EA58-46F0-BFFF-B4D6E2B96B04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33099406-072F-4389-9614-463FC482F3CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33099406-072F-4389-9614-463FC482F3CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33099406-072F-4389-9614-463FC482F3CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33099406-072F-4389-9614-463FC482F3CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17CA8A65-5E43-4A26-ADD8-2BEE8A6018C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17CA8A65-5E43-4A26-ADD8-2BEE8A6018C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17CA8A65-5E43-4A26-ADD8-2BEE8A6018C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17CA8A65-5E43-4A26-ADD8-2BEE8A6018C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E5A5FB6-2A97-4782-84AE-47B33343F5EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E5A5FB6-2A97-4782-84AE-47B33343F5EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E5A5FB6-2A97-4782-84AE-47B33343F5EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E5A5FB6-2A97-4782-84AE-47B33343F5EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FF01158-E837-4EDD-98E2-4FFFA94C349F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FF01158-E837-4EDD-98E2-4FFFA94C349F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FF01158-E837-4EDD-98E2-4FFFA94C349F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FF01158-E837-4EDD-98E2-4FFFA94C349F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7623A079-E036-4359-B554-3F8873069F6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7623A079-E036-4359-B554-3F8873069F6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7623A079-E036-4359-B554-3F8873069F6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7623A079-E036-4359-B554-3F8873069F6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98F96E66-442F-4857-8D8A-B35B6E59EF3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98F96E66-442F-4857-8D8A-B35B6E59EF3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98F96E66-442F-4857-8D8A-B35B6E59EF3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98F96E66-442F-4857-8D8A-B35B6E59EF3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A0014A9-B924-40E0-B94A-D2DDBFBBE1B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A0014A9-B924-40E0-B94A-D2DDBFBBE1B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A0014A9-B924-40E0-B94A-D2DDBFBBE1B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A0014A9-B924-40E0-B94A-D2DDBFBBE1B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6F812E7-EA58-46F0-BFFF-B4D6E2B96B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6F812E7-EA58-46F0-BFFF-B4D6E2B96B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6F812E7-EA58-46F0-BFFF-B4D6E2B96B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6F812E7-EA58-46F0-BFFF-B4D6E2B96B04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{33099406-072F-4389-9614-463FC482F3CD} = {7E6D2046-5690-4F39-98CA-48FB747A1223}
+		{17CA8A65-5E43-4A26-ADD8-2BEE8A6018C0} = {7E6D2046-5690-4F39-98CA-48FB747A1223}
+		{0E5A5FB6-2A97-4782-84AE-47B33343F5EC} = {7E6D2046-5690-4F39-98CA-48FB747A1223}
+		{8FF01158-E837-4EDD-98E2-4FFFA94C349F} = {29F6036C-3639-4E46-AAD2-9039944C8A2A}
+		{7623A079-E036-4359-B554-3F8873069F6D} = {29F6036C-3639-4E46-AAD2-9039944C8A2A}
+		{98F96E66-442F-4857-8D8A-B35B6E59EF3F} = {29F6036C-3639-4E46-AAD2-9039944C8A2A}
+		{1A0014A9-B924-40E0-B94A-D2DDBFBBE1B5} = {A2C5FE54-F0DF-4C92-9B39-9CE911519B93}
+		{C6F812E7-EA58-46F0-BFFF-B4D6E2B96B04} = {7AEFD0D0-BFBA-418C-832A-485CC4B7F3C9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7374C189-8149-4209-A6B1-E2A422E379AB}
+	EndGlobalSection
+EndGlobal

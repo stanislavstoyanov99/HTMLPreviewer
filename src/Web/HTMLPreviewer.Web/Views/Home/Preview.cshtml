@@ -1,0 +1,6 @@
+﻿@model HTMLPreviewer.Services.Data.Models.HTMLExampleDetailsModel
+@{
+    ViewData["Title"] = "Preview Page";
+}
+
+@Html.Raw(HttpUtility.HtmlDecode(Model.SanitizedHTMLContent))

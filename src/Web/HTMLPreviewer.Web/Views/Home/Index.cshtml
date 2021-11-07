@@ -1,0 +1,91 @@
+﻿@model HTMLPreviewer.Services.Data.Models.HTMLExampleCreateModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <form id="htmlExampleForm" asp-controller="Home" asp-action="Create" method="post">
+            <div class="form-group">
+                <label class="pb-3">Input HTML</label>
+                <textarea id="inputTextArea" asp-for="HTMLContent" class="form-control"></textarea>
+                <span asp-validation-for="HTMLContent" class="d-block text-danger"></span>
+                <button type="submit" class="mt-3 btn btn-success">
+                    <i class="fas fa-save"></i> Save
+                </button>
+                <button id="runBtn" class="mt-3 btn btn-primary">Run</button>
+                @if (Model.HTMLContent != null)
+                {
+                    <button id="editBtn" class="mt-3 btn btn-secondary">
+                        <i class="fas fa-pen"></i> Edit
+                    </button>
+                    <button id="checkOriginalBtn" class="mt-3 btn btn-info">Check with original</button>
+                    <button asp-controller="Home" asp-action="Preview" asp-route-id="@Model.Id" class="mt-3 btn btn-dark">Preview</button>
+                }
+            </div>
+        </form>
+        <hr />
+        <div class="mt-3">
+            <label class="pb-3">Output HTML Result</label>
+            <iframe id="outputResult" class="iframeResultWindow"></iframe>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src="/js/restApi.min.js"></script>
+    <script src="/lib/tinymce/tinymce.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        tinymce.init({
+            selector: "textarea",
+            plugins: [
+                "image paste table link code media"
+            ]
+        });
+    </script>
+
+    <script>
+        const iframe = document.getElementById('outputResult');
+        let token = $("#htmlExampleForm input[name='__RequestVerificationToken']").val();
+
+        function renderOutput(e) {
+            e.preventDefault();
+            const textAreaContent = tinymce.get("inputTextArea").getContent({ format: "text" });
+            let jsonBody = { htmlContent: textAreaContent };
+
+            executeRun(jsonBody, token, iframe);
+        }
+
+        const runBtn = document.getElementById('runBtn');
+
+        runBtn.addEventListener('click', (e) => {
+            renderOutput(e);
+        });
+    </script>
+
+    @if (Model.HTMLContent != null)
+    {
+        <script>
+            const checkOriginalBtn = document.getElementById('checkOriginalBtn');
+
+            checkOriginalBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const currentHtmlContent = tinymce.get("inputTextArea").getContent();
+                let jsonBody = { id: '@Model.Id', currentHtmlContent: currentHtmlContent };
+
+                executeCheckOriginal(jsonBody, token);
+            });
+
+            const editBtn = document.getElementById('editBtn');
+
+            editBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const currentHtmlContent = tinymce.get("inputTextArea").getContent();
+                let jsonBody = { id: '@Model.Id', htmlContent: currentHtmlContent };
+                executeEdit(jsonBody, token);
+            });
+        </script>
+    }
+}
