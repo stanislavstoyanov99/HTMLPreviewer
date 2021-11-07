@@ -9,14 +9,19 @@
 ## Sample images
 **Input textarea**
 ![Image 1](https://github.com/stanislavstoyanov99/HTMLPreviewer/blob/main/images/1.jpg)
+
 **Rendered HTML content**
 ![Image 2](https://github.com/stanislavstoyanov99/HTMLPreviewer/blob/main/images/2.jpg)
+
 **Notifications popup**
 ![Image 3](https://github.com/stanislavstoyanov99/HTMLPreviewer/blob/main/images/3.jpg)
+
 **Check with original popup (the same content)**
 ![Image 4](https://github.com/stanislavstoyanov99/HTMLPreviewer/blob/main/images/4.jpg)
+
 **Check with original popup (different content)**
 ![Image 5](https://github.com/stanislavstoyanov99/HTMLPreviewer/blob/main/images/5.jpg)
+
 **Preview page with link in the address bar**
 ![Image 6](https://github.com/stanislavstoyanov99/HTMLPreviewer/blob/main/images/6.jpg)
 
